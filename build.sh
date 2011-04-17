@@ -1,1 +1,1 @@
-coffee -o lib/ -c src/
+coffee -o data/ -c src/
