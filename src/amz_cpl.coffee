@@ -1,6 +1,8 @@
 pageWorkers = require("page-worker")
 data = require("self").data
 
+logger = (log) ->
+  console.log(log)
 
 class Book
   constructor: (@isbn) ->
@@ -19,7 +21,7 @@ class Book
       contentScript: data.url('ninja_reader.js')
       contentScriptWhen: "ready"
       contentURL : ninja_url
-      onMessage: console.log
+      onMessage: logger
     )
 
 exports.book = Book
