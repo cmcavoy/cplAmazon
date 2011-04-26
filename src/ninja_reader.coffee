@@ -1,4 +1,5 @@
 console.log("in the ninja")
+jQuery(".chris")
 link_to_cpl = document.querySelectorAll('a.whiteButton')
 postMessage("test message from ninja")
 if link_to_cpl.length > 0

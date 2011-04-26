@@ -18,7 +18,7 @@ class Book
     ninja_url = "http://chipubninja.com/branch_search.php?#{qs}"
     console.log("ninja url #{ninja_url}")
     @ninja_data = pageWorkers.Page(
-      contentScriptFile: data.url("ninja_reader.js")
+      contentScriptFile: [data.url("jquery-1.5.1.min.js"), data.url("ninja_reader.js")]
       contentScriptWhen: "ready"
       contentURL : ninja_url
       onMessage: (log) -> console.log("got a message from the ninja #{log}")
