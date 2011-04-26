@@ -2,7 +2,7 @@ pageWorkers = require("page-worker")
 data = require("self").data
 
 logger = (log) ->
-  console.log(log)
+  console.log("got a message from the ninja #{log}")
 
 class Book
   constructor: (@isbn) ->
@@ -16,12 +16,12 @@ class Book
     # loads data for the isbn from the cpl ninja site
     qs = "Ntt=#{@isbn}&formats=0&languages=0&audiences=0&ficnonfic=0&onshelfonly=1&showref=0&availability=1"
     ninja_url = "http://chipubninja.com/branch_search.php?#{qs}"
-    console.log(ninja_url)
+    console.log("ninja url #{ninja_url}")
     @ninja_data = pageWorkers.Page(
-      contentScript: data.url('ninja_reader.js')
+      contentScriptFile: data.url("ninja_reader.js")
       contentScriptWhen: "ready"
       contentURL : ninja_url
-      onMessage: logger
+      onMessage: (log) -> console.log("got a message from the ninja #{log}")
     )
 
 exports.book = Book
