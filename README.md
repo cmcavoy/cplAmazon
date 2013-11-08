@@ -11,3 +11,5 @@ works if you're logged out. I'll fix it up.
 
 If you want to install the add-on, it's <a
 href="http://cmcavoy.github.io/cplAmazon/cplamazon.xpi">here</a>.
+
+![maybe a screenshot will convince you how awesome this is](http://cmcavoy.github.io/cplAmazon/screenshot.png)
