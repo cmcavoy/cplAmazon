@@ -1,9 +1,9 @@
 {
-    "name": "cpl_amazon", 
-    "license": "MPL 1.1/GPL 2.0/LGPL 2.1", 
-    "author": "", 
-    "version": "0.1", 
-    "fullName": "cpl_amazon", 
-    "id": "jid0-ctkxtBAnXHUPzizwoLAPNH7mQJ0", 
-    "description": "a basic add-on"
+    "name": "cplAmazon",
+    "license": "MPL 1.1/GPL 2.0/LGPL 2.1",
+    "author": "Chris McAvoy <chris.mcavoy@gmail.com>",
+    "version": "0.1",
+    "fullName": "CPL Amazon",
+    "id": "jid0-ctkxtBAnXHUPzizwoLAPNH7mQJ0",
+    "description": "Adds a link to Amazon book pages to the CPL reservation page."
 }
