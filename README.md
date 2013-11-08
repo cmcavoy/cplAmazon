@@ -1,5 +1,6 @@
-This is the cpl_amazon add-on.  It contains:
+# cplAmazon
 
-* A program (lib/main.js).
-* A few tests.
-* Some meager documentation.
+A Firefox Addon that injects a Chicago Public Library reserve link
+into an Amazon book page. Assumes the exact ISBN for now
+
+This is largely a work in progress. It will get better.
